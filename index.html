@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEBDEV MADA ACADEMY</title>
+<meta name="description" content="Apprenez le développement web avec WEBDEV MADA ACADEMY et son Prof IA.">
+<style>
+:root {
+  --brown:#24150f;
+  --brown2:#3e2615;
+  --gold:#e6b65c;
+  --cream:#fffaf1;
+  --text:#30241d;
+  --muted:#776b60;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.6
+}
+header{
+  background:var(--brown);
+  color:white;
+  padding:16px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+  border-bottom:3px solid var(--gold)
+}
+.logo{font-size:20px;font-weight:bold}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{
+  padding:75px 7%;
+  background:linear-gradient(120deg,#24150f,#56351e);
+  color:white;
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:35px;
+  align-items:center
+}
+.hero h1{font-size:clamp(32px,5vw,55px);line-height:1.15;margin:10px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#f0e4d7;max-width:580px}
+.badge{
+  display:inline-block;
+  color:var(--gold);
+  border:1px solid #967442;
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:13px
+}
+.btn{
+  display:inline-block;
+  padding:12px 19px;
+  border-radius:8px;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:14px
+}
+.primary{background:var(--gold);color:#24150f}
+.secondary{border:1px solid #d8bd91;color:white}
+.hero-card{
+  background:#fffaf1;
+  color:var(--text);
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 15px 40px #0003
+}
+.hero-card .icon{font-size:45px}
+.hero-card h3{margin:8px 0}
+section{padding:60px 7%}
+.section-title{text-align:center;margin-bottom:32px}
+.section-title h2{font-size:30px;margin:0 0 8px}
+.section-title p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{
+  background:white;
+  padding:24px;
+  border:1px solid #eee1cf;
+  border-radius:14px;
+  box-shadow:0 5px 18px #3e26150b
+}
+.card h3{margin-top:8px}
+.card-icon{font-size:32px}
+.price{font-size:27px;font-weight:bold;color:#9b6823}
+.small{font-size:13px;color:var(--muted)}
+.dark-section{background:#f1e8da}
+.tag{
+  display:inline-block;background:#f7ead1;color:#80531d;
+  padding:4px 9px;border-radius:20px;font-size:12px
+}
+#prof{background:#fffaf1}
+.chat-panel{
+  max-width:850px;margin:auto;background:white;border:1px solid #e9dccb;
+  border-radius:16px;overflow:hidden;box-shadow:0 10px 30px #24150f0d
+}
+.chat-head{background:var(--brown2);color:white;padding:18px 22px}
+.chat-head strong{font-size:19px}
+.chat-head p{margin:4px 0;color:#e9d9c6;font-size:13px}
+.chat-messages{
+  height:280px;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px
+}
+.message{padding:12px 15px;border-radius:12px;max-width:90%;white-space:pre-wrap;overflow-wrap:anywhere}
+.bot{background:#f5efe5;align-self:flex-start}
+.user{background:#3e2615;color:white;align-self:flex-end}
+.chat-controls{padding:16px;border-top:1px solid #eee4d7}
+label{display:block;font-weight:bold;font-size:13px;margin:8px 0 5px}
+select,textarea,input{
+  width:100%;padding:12px;border:1px solid #ddcfbd;border-radius:8px;
+  background:white;color:var(--text);font:inherit
