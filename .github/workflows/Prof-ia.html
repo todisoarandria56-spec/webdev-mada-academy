@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professeur IA | WEBDEV MADA ACADEMY</title>
+
+    <meta name="description"
+          content="Espace pédagogique pour apprendre HTML, CSS et JavaScript.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .prof-container {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .prof-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .prof-intro .robot {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .topic-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 25px 0;
+        }
+
+        .topic-button {
+            padding: 10px 16px;
+            color: #F2D28A;
+            background: #2B1B12;
+            border: 1px solid rgba(214, 166, 79, .4);
+            border-radius: 25px;
+        }
+
+        .topic-button:hover {
+            background: #3D281B;
+        }
+
+        .lesson-box {
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #1D1510;
+            border: 1px solid rgba(214, 166, 79, .22);
+            border-radius: 15px;
+        }
+
+        .lesson-box h3 {
+            color: #F2D28A;
+            margin-bottom: 10px;
+        }
+
+        .lesson-box p {
+            color: #D8CEC1;
+        }
+
+        .code-example {
+            display: block;
+            overflow-x: auto;
+            white-space: pre;
+            padding: 18px;
+            margin-top: 15px;
+            background: #0B0806;
+            color: #F2D28A;
+            border-radius: 10px;
+            font-family: monospace;
+            line-height: 1.7;
+        }
+
+        .question-form {
+            padding: 20px;
+            background: #1D1510;
+            border: 1px solid rgba(214, 166, 79, .3);
+            border-radius: 15px;
+        }
+
+        .question-form textarea {
+            width: 100%;
+            min-height: 110px;
+            padding: 14px;
+            margin-bottom: 15px;
+            color: #FFF9EF;
+            background: #120D0A;
+            border: 1px solid rgba(214, 166, 79, .3);
+            border-radius: 8px;
+            resize: vertical;
+        }
+
+        .prof-answer {
+            display: none;
+            margin-top: 20px;
+            padding: 18px;
+            color: #FFF9EF;
+            background: #2B1B12;
+            border-left: 4px solid #D6A64F;
+            border-radius: 8px;
+            overflow-wrap: anywhere;
+        }
+
+        .prof-answer pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            margin-top: 12px;
+        }
+
+        .notice-demo {
+            margin-top: 15px;
+            color: #D8CEC1;
+            font-size: .85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            WEBDEV MADA
+            <span>ACADEMY</span>
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="prof-ia.html" class="active">Prof IA</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="hero">
+    <div class="container prof-container">
+
+        <div class="prof-intro">
+            <div class="robot">🤖</div>
+
+            <span class="badge">Assistant pédagogique</span>
+
+            <h1>
+                Bonjour ! Je suis le
+                <span class="text-gold">Prof IA</span>
+            </h1>
+
+            <p>
+                Découvre le développement web étape par étape.
+                Choisis une leçon ou pose une question sur HTML,
+                CSS ou JavaScript.
+            </p>
+        </div>
+
+
+        <div class="lesson-box">
+            <h3>📘 Leçon 1 — Découvrir HTML</h3>
+
+            <p>
+                HTML est le langage qui sert à organiser le contenu
+                d'une page web : les titres, les paragraphes,
+                les images et les liens.
+            </p>
+
+            <code class="code-example">&lt;h1&gt;Bonjour Madagascar !&lt;/h1&gt;
+&lt;p&gt;Je découvre le développement web.&lt;/p&gt;</code>
+
+            <p style="margin-top: 12px;">
+                <strong>Explication :</strong> la balise
+                <code>&lt;h1&gt;</code> crée un titre principal.
+                La balise <code>&lt;p&gt;</code> crée un paragraphe.
+            </p>
+        </div>
+
+
+        <div class="lesson-box">
+            <h3>🎨 Leçon 2 — Découvrir CSS</h3>
+
+            <p>
+                CSS permet de personnaliser les couleurs,
+                les tailles, les espacements et la présentation
+                des éléments HTML.
+            </p>
+
+            <code class="code-example">h1 {
+    color: goldenrod;
+    font-size: 32px;
+}</code>
+
+            <p style="margin-top: 12px;">
+                <strong>Explication :</strong>
+                <code>color</code> change la couleur du texte.
+                <code>font-size</code> définit sa taille.
+            </p>
+        </div>
+
+
+        <div class="lesson-box">
+            <h3>⚡ Leçon 3 — Découvrir JavaScript</h3>
+
+            <p>
+                JavaScript permet d'ajouter des actions et des
+                comportements interactifs à une page web.
+            </p>
+
+            <code class="code-example">function direBonjour() {
+    alert("Bonjour !");
+}</code>
+
+            <p style="margin-top: 12px;">
+                <strong>Explication :</strong> cette fonction
+                affiche un message lorsque le code l'appelle.
+            </p>
+        </div>
+
+
+        <div class="question-form">
+
+            <h2 style="margin-bottom: 10px;">
+                💬 Pose ta question
+            </h2>
+
+            <p style="color: #D8CEC1; margin-bottom: 20px;">
+                Par exemple : « Explique-moi la différence entre
+                HTML et CSS. »
+            </p>
+
+            <div class="topic-list">
+                <button type="button" class="topic-button"
+                        data-question="Explique-moi les bases du HTML.">
+                    Apprendre HTML
+                </button>
+
+                <button type="button" class="topic-button"
+                        data-question="Explique-moi les bases du CSS.">
+                    Apprendre CSS
+                </button>
+
+                <button type="button" class="topic-button"
+                        data-question="Explique-moi les bases de JavaScript.">
+                    Apprendre JavaScript
+                </button>
+            </div>
+
+            <form id="prof-form">
+                <label for="prof-question">
+                    Ta question
+                </label>
+
+                <textarea
+                    id="prof-question"
+                    placeholder="Écris ta question ici..."
+                    required
+                    maxlength="2000"></textarea>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    Expliquer ma question
+                </button>
+            </form>
+
+            <div id="prof-answer"
+                 class="prof-answer"
+                 role="status"
+                 aria-live="polite"></div>
+
+            <p class="notice-demo">
+                ⚠️ Version pédagogique de démonstration :
+                les réponses sont prédéfinies. Une connexion à un
+                véritable service d'IA sera nécessaire pour obtenir
+                des réponses personnalisées à toutes les questions.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+
+        <div class="footer-bottom">
+            © <span data-year></span>
+            WEBDEV MADA ACADEMY — Tous droits réservés.
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("prof-form");
+    const input = document.getElementById("prof-question");
+    const answer = document.getElementById("prof-answer");
+
+    document.querySelectorAll("[data-question]").forEach(function (button) {
+        button.addEventListener("click", function () {
+            input.value = button.dataset.question;
+            input.focus();
+        });
+    });
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const question = input.value.trim().toLowerCase();
+
+        if (!question) {
+            return;
+        }
+
+        let response;
+
+        if (question.includes("html")) {
+            response =
+                "HTML sert à structurer une page web
