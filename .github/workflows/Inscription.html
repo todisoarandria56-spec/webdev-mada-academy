@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription | WEBDEV MADA ACADEMY</title>
+
+    <meta name="description"
+          content="Inscrivez-vous aux formations HTML, CSS et JavaScript de WEBDEV MADA ACADEMY à Madagascar.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                WEBDEV MADA
+                <span>ACADEMY</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="index.html#prof-ia">Prof IA</a></li>
+                    <li><a href="inscription.html" class="active">Inscription</a></li>
+                </ul>
+            </nav>
+
+            <a href="formations.html" class="btn btn-outline">
+                Nos formations
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Présentation -->
+    <section class="hero">
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="badge">🎓 Rejoignez notre académie</span>
+
+                <h1>
+                    Inscrivez-vous à
+                    <span class="text-gold">WEBDEV MADA ACADEMY</span>
+                </h1>
+
+                <p>
+                    Remplissez le formulaire ci-dessous pour préparer
+                    votre demande d'inscription à une formation
+                    en développement web.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Formulaire -->
+    <section class="form-section" id="inscription">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="eyebrow">Formulaire d'inscription</span>
+
+                <h2>Vos informations</h2>
+
+                <p>
+                    Veuillez vérifier vos coordonnées avant de préparer
+                    votre demande.
+                </p>
+
+            </div>
+
+
+            <div class="form-card">
+
+                <form id="registration-form">
+
+                    <div class="form-grid">
+
+                        <!-- Nom -->
+                        <div class="form-group">
+
+                            <label for="nom">Nom *</label>
+
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                placeholder="Votre nom"
+                                autocomplete="family-name"
+                                required
+                                maxlength="80">
+
+                        </div>
+
+
+                        <!-- Prénom -->
+                        <div class="form-group">
+
+                            <label for="prenom">Prénom *</label>
+
+                            <input
+                                type="text"
+                                id="prenom"
+                                name="prenom"
+                                placeholder="Votre prénom"
+                                autocomplete="given-name"
+                                required
+                                maxlength="80">
+
+                        </div>
+
+
+                        <!-- E-mail -->
+                        <div class="form-group">
+
+                            <label for="email">Adresse e-mail *</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="exemple@email.com"
+                                autocomplete="email"
+                                required
+                                maxlength="150">
+
+                        </div>
+
+
+                        <!-- Téléphone -->
+                        <div class="form-group">
+
+                            <label for="telephone">Téléphone *</label>
+
+                            <input
+                                type="tel"
+                                id="telephone"
+                                name="telephone"
+                                placeholder="Ex. : 034 00 000 00"
+                                autocomplete="tel"
+                                required
+                                maxlength="25">
+
+                        </div>
+
+
+                        <!-- Formation -->
+                        <div class="form-group full-width">
+
+                            <label for="formation">
+                                Formation souhaitée *
+                            </label>
+
+                            <select
+                                id="formation"
+                                name="formation"
+                                required>
+
+                                <option value="">
+                                    -- Choisissez une formation --
+                                </option>
+
+                                <option value="html" data-price="10000">
+                                    Initiation HTML — 10 000 Ar
+                                </option>
+
+                                <option value="html-css" data-price="20000">
+                                    HTML + CSS — 20 000 Ar
+                                </option>
+
+                                <option value="complet" data-price="50000">
+                                    Développement web complet — 50 000 Ar
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Prix -->
+                        <div class="form-group full-width">
+
+                            <label for="prix">Tarif indicatif</label>
+
+                            <input
+                                type="text"
+                                id="prix"
+                                name="prix"
+                                value="Sélectionnez une formation"
+                                readonly>
+
+                        </div>
+
+
+                        <!-- Niveau -->
+                        <div class="form-group full-width">
+
+                            <label for="niveau">
+                                Votre niveau en informatique
+                            </label>
+
+                            <select id="niveau" name="niveau">
+
+                                <option value="debutant">
+                                    Débutant
+                                </option>
+
+                                <option value="intermediaire">
+                                    Intermédiaire
+                                </option>
+
+                                <option value="avance">
+                                    Avancé
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group full-width">
+
+                            <label for="message">
+                                Message complémentaire (facultatif)
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Qu'aimeriez-vous apprendre ?"
+                                maxlength="1000"></textarea>
+
+                        </div>
+
+
+                        <!-- Consentement -->
+                        <div class="form-group full-width">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="consentement"
+                                    name="consentement"
+                                    required>
+
+                                J'accepte que mes informations soient
+                                utilisées pour traiter ma demande
+                                d'inscription.
+                            </label>
+
+                        </div>
+
+
+                        <!-- Bouton -->
+                        <div class="form-group full-width">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary btn-block">
+
+                                Préparer ma demande d'inscription
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <p class="form-note">
+                        * Champs obligatoires. Cette version prépare un
+                        fichier de demande sur votre appareil. Elle ne
+                        transmet pas automatiquement les informations
+                        à l'administration.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Instructions de paiement -->
+    <section id="paiement">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="eyebrow">Paiement</span>
+
+                <h2>Orange Money Madagascar</h2>
+
+                <p>
+                    Le paiement sera organisé après confirmation
+                    de votre inscription.
+                </p>
+
+            </div>
+
+
+            <div class="payment-card">
+
+                <h3>💰 Comment procéder ?</h3>
+
+                <p>
+                    <strong>Étape 1 :</strong>
+                    choisissez votre formation et préparez votre demande.
+                </p>
+
+                <p>
+                    <strong>Étape 2 :</strong>
+                    attendez la confirmation de l'administration et
+                    les instructions officielles de paiement.
+                </p>
+
+                <p>
+                    <strong>Étape 3 :</strong>
+                    vérifiez le nom du bénéficiaire et le montant
+                    avant toute transaction Orange Money.
+                </p>
+
+                <div class="payment-badge">
+                    Paiement à confirmer
+                </div>
+
+                <p class="form-note">
+                    Aucun paiement n'est effectué depuis cette page.
+                    Le paiement automatique n'est pas encore intégré.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pied de page -->
+    <footer>
+
+        <div class="container">
+
+            <div class="footer
